@@ -17,4 +17,12 @@ app.get(`/`, (request, response) => {
   }
 });
 
+app.get(`/student`, (request, response) => {
+  response.render(`student`);
+});
+
+app.get(`/student-signup`, (request, response) => {
+  response.render(`./student/signup`);
+});
+
 module.exports = app;
